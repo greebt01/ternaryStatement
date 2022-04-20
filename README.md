@@ -2,4 +2,7 @@
 # Description
 Program that uses a ternary statement
 
+# Update1
+Replaced if statement with ternary statement and added user input.
+
 

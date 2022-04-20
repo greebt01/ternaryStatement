@@ -1,16 +1,12 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.stream.Stream;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int income = 120_000;
-        String className;
-        if (income > 100_000) {
-            className = "First";
-        } else {
-            className = "Economy";
-        }
+        System.out.print("What is your income?");
+        Scanner scanner = new Scanner(System.in);
+        int income = scanner.nextInt();
+        String className=income>100_000 ?"First":"Economy";
+
         System.out.println("Class: " + className);
     }
 }
